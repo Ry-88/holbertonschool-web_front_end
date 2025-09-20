@@ -1,0 +1,11 @@
+/* Smooth programmatic & anchor scrolling */
+html {
+  scroll-behavior: smooth;
+  /* avoid interfering with the browser's default - don't set overscroll-behavior unless you want to change overscroll UX */
+}
+
+/* For scrollable containers on iOS (not always needed on root) */
+.scrollable {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* enables momentum scrolling on iOS Safari */
+}
